@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área da superfície e volume de corpos redondos</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/javas.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/katex.min.css" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <header>
+        Corpos Redondos: Área e Volume
+    </header>
+    <div id="subheader"></div>
+    <section class="incompleto">
+        <h2>Círculos</h2>
+        <p>Na geometria plana, um círculo é o conjunto de pontos cuja distância a um determinado ponto C, chamado de centro, é menor ou igual a um valor r, chamado de raio. Podemos associar a um círculo vários elementos a nossa volta. Marque a seguir as
+            imagens que possuem círculos.
+        </p>
+        <div class="img-me-cont">
+            <div class="img-me ce" style="background-image: url('img/placa.jpg');" onclick="verif_img(this)"></div>
+            <div class="img-me er" style="background-image: url('img/cesta.jpg');" onclick="verif_img(this)"></div>
+            <div class="img-me ce" style="background-image: url('img/espelho.jpg');" onclick="verif_img(this)"></div>
+            <div class="img-me er" style="background-image: url('img/bambole.jpg');" onclick="verif_img(this)"></div>
+        </div>
+
+    </section>
+    <section class="incompleto">
+
+        <p>O espaço que um círculo ocupa no plano é a sua área e depende apenas da medida do seu raio.
+        </p>
+        <p>A área de um circulo de raio r é dada por $A=\pi.r^2$.</p>
+        <p><strong>Questão 1</strong>. Na figura os dois círculos de mesmo centro, possuem raios r e 2r. Eles determinam duas áreas: S1 em azul e S2 em verde. Determine a razão entre as áreas S1 e S2.</p>
+    </section>
+    <section class="incompleto">
+        <h2>Cilindro</h2>
+        <p>Lorem.</p>
+
+    </section>
+    <section class="incompleto">
+        Autora: Júlia
+        <h2>Cone</h2>
+        <p>Lorem ipsum.</p>
+    </section>
+    <section class="incompleto">
+        <h2>Esfera</h2>
+        <p>Lorem ipsum.</p>
+    </section>
+
+
+
+    <script type="module">
+        import renderMathInElement from "https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.mjs"; renderMathInElement(document.body); renderMathInElement( document.body, { delimiters: [ {left: "$$", right: "$$", display: true}, {left: "\\[", right:
+        "\\]", display: true}, {left: "$", right: "$", display: false}, {left: "\\(", right: "\\)", display: false} ] } ); document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body, { strict: false }); });
+    </script>
+</body>
+
+</html>

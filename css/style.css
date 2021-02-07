@@ -1,0 +1,132 @@
+@font-face {
+    font-family: Arial, Helvetica, sans-serif;
+    src: local('Arial');
+    unicode-range: U+03C0;
+}
+
+header {
+    display: block;
+    top: 0px;
+    height: 30px;
+    background-color: #FAFBFC;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    padding: 20px max(calc(50% - 400px), 20px);
+    border: solid #EAECEF;
+    border-width: 0px 0px 2px;
+    position: fixed;
+    width: 100%;
+    font-weight: bolder;
+    z-index: 2;
+}
+
+#subheader {
+    display: block;
+    top: 0px;
+    height: 60px;
+    width: 100%;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    font-family: Gotham;
+}
+
+section {
+    max-width: 800px;
+    padding: 0px max(calc(50% - 400px), 20px);
+    text-indent: 2em;
+    text-align: justify;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+def {
+    border-color: yellowgreen;
+    border-style: solid;
+    border-width: 0px 0px 5px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0 3px;
+}
+
+def:hover {
+    background-color: rgb(187, 241, 87);
+    border-radius: 5px;
+    padding: 0 3px;
+    width: 0px;
+    -webkit-transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+}
+
+span {
+    font-style: normal !important;
+}
+
+.img-me-cont {
+    background-image: url(../img/quadriculado.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-indent: 0px !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+}
+
+.img-me {
+    border: #3e6aac 2px solid;
+    width: 150px;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.incompleto:first-of-type {
+    display: block;
+}
+
+.incompleto {
+    display: none;
+}
+
+.img-me>img {
+    height: 150px;
+    display: flex;
+    filter: opacity(1);
+}
+
+.atual {
+    animation-name: entrada;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    position: relative;
+    padding-bottom: 500px;
+}
+
+.img-me:hover {
+    background-color: rgb(167, 136, 255);
+    background-blend-mode: hard-light;
+    transition: background-color .25s;
+}
+
+@keyframes entrada {
+    0% {
+        padding-top: 20px;
+        opacity: 0;
+    }
+    100% {
+        padding-top: 0px;
+        opacity: 1;
+    }
+}
