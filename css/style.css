@@ -64,6 +64,20 @@ def:hover {
     transition: background-color 0.5s ease-out;
 }
 
+.destaque {
+    background-color: rgba(255, 127, 80, 0.295);
+    padding: 1px;
+    position: relative;
+    text-align: center;
+    left: 20%;
+    width: 60%;
+}
+
+.destaque>p {
+    line-height: 5px;
+    text-indent: 0px;
+}
+
 span {
     font-style: normal !important;
 }
