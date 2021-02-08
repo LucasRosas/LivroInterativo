@@ -37,10 +37,38 @@ function completo() {
     x = document.getElementsByClassName('incompleto')[0]
     x.style.display = 'block'
     x.classList.add('atual')
-    window.scrollTo(0, x.offsetTop - 300)
+        /* window.scrollTo(0, x.offsetTop - 400) */
     npis = document.getElementsByClassName('mord').length
     for (i = 0; i < npis; i++) {
         pis = document.getElementsByClassName('mord')[i]
         pis.innerHTML = pis.innerHTML.replace('π', '<text style="font-family: Symbol;">&#x3C0</text>');
+    }
+}
+
+function escolheu(x) {
+    if (x.parentElement.classList.contains('certo')) {} else {
+
+        if (x.classList.contains('escolhido')) {
+            x.classList.remove('escolhido')
+        } else {
+            sele = document.getElementsByClassName('escolhido').length
+            for (i = 0; i < sele; i++) {
+                document.getElementsByClassName('escolhido')[i].classList.remove('escolhido')
+            }
+            x.classList.add('escolhido')
+            if (x.classList.contains('ce')) {
+                x.classList.add('me-acertou')
+                x.innerHTML = x.innerHTML + '<i class="fas fa-check"></i>'
+                x.classList.remove('ce')
+                x.parentElement.classList.add('certo')
+                completo(x)
+
+            } else {
+                if (!x.classList.contains('me-errou')) {
+                    x.innerHTML = x.innerHTML + '<i class="fas fa-times-circle"></i>'
+                    x.classList.add('me-errou')
+                }
+            }
+        }
     }
 }

@@ -144,3 +144,45 @@ span {
         opacity: 1;
     }
 }
+
+.alternativas {
+    text-indent: 0;
+    line-height: 45px;
+}
+
+.alternativas>div {
+    width: 200px;
+    border-radius: 2px;
+    margin: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.alternativas>div>div {
+    width: 8px;
+    height: 8px;
+    border: #3e6aac 7px solid;
+    border-radius: 100%;
+    margin: 0 20px 0 10px;
+}
+
+.alternativas>div:hover>div {
+    border: #1b365e 7px solid;
+    border-radius: 100%;
+}
+
+.escolhido>div {
+    background-color: #1b365e !important;
+    border: #1b365e 7px solid !important;
+}
+
+.fa-check {
+    padding-left: 10px;
+    color: green;
+}
+
+.fa-times-circle {
+    padding-left: 10px;
+    color: rgb(199, 0, 0);
+}

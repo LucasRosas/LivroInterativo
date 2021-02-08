@@ -6,11 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Área da superfície e volume de corpos redondos</title>
 
+    <!-- códigos 'autorais' -->
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/javas.js"></script>
+
+    <!-- icones -->
+    <script src="https://kit.fontawesome.com/029cf7ac2a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- jquery -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- fórmulas matemáticas -->
+
     <link rel="stylesheet" href="css/katex.min.css" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.0/jspdf.umd.min.js"></script>
 
 
 </head>
@@ -46,11 +59,23 @@
         <p>A área de um circulo de raio r é dada por
             <def>$A=\pi.r^2$</def>. No vídeo a seguir você pode encontrar uma demonstração simplificada, mas bem interessante, para essa fórmula.</p>
         <iframe width="100%" height="400" src="https://www.youtube.com/embed/L0afrglXAWg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 10px;"></iframe>
-        <p><strong>Questão 1</strong>. Na figura os dois círculos de mesmo centro, possuem raios r e 2r. Eles determinam duas regiões: $S_1$ em azul e $S_2$ em verde. Determine a razão entre as áreas de $S_1$ e $S_2$.</p>
+        <p><strong>Questão 1</strong>. Na figura os dois círculos de mesmo centro, possuem raios r e 2r. Eles determinam duas regiões: $S_1$ em azul e $S_2$ em verde. Determine a relação entre as áreas de $S_1$ e $S_2$.</p>
         <table>
             <td><img src="img/q1.png" align="left" style="height: 250px;"></td>
             <td>
-                <p><strong>Questão 1</strong>. Na figura os dois círculos de mesmo centro, possuem raios r e 2r. Eles determinam duas regiões: $S_1$ em azul e $S_2$ em verde. Determine a razão entre as áreas de $S_1$ e $S_2$.</p>
+                <div class="alternativas">
+                    <div onclick='escolheu(this)'>
+                        <div></div>$S_1=S_2$</div>
+                    <div onclick='escolheu(this)'>
+                        <div></div>$S_1=2.S_2$</div>
+                    <div onclick='escolheu(this)' class=ce>
+                        <div></div>$S_1=3.S_2$</div>
+                    <div onclick='escolheu(this)'>
+                        <div></div>$S_1=\frac{3}{2}.S_2$</div>
+                    <div onclick='escolheu(this)'>
+                        <div></div>$S_1=\frac{4}{3}.S_2$</div>
+
+                </div>
             </td>
         </table>
         <div>
