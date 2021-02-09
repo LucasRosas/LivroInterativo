@@ -60,21 +60,21 @@
         <p>A área de um circulo de raio r é dada por
             <def>$A=\pi.r^2$</def>. No vídeo a seguir você pode encontrar uma demonstração simplificada, mas bem interessante, para essa fórmula.</p>
         <iframe width="100%" height="400" src="https://www.youtube.com/embed/L0afrglXAWg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 10px;"></iframe>
-        <p><strong>Questão 1</strong>. Na figura, os dois círculos são concêntricos e possuem raios de medidas r e 2r. Eles determinam duas regiões: $S_1$ em azul e $S_2$ em verde. Determine a relação entre as áreas de $S_1$ e $S_2$.</p>
-        <table>
+        <p class="question"><strong>Questão 1</strong>. Na figura, os dois círculos são concêntricos e possuem raios de medidas r e 2r. Eles determinam duas regiões: $S_1$ em azul e $S_2$ em verde. Determine a relação entre as áreas de $S_1$ e $S_2$.</p>
+        <table class="altern">
             <td><img src="img/q1.png" align="left" style="height: 250px;"></td>
-            <td>
+            <td style="width: 100%;">
                 <div class="alternativas">
                     <div onclick='escolheu(this)'>
-                        <div></div>$S_1=S_2$</div>
+                        <div>A</div>$S_1=S_2$</div>
                     <div onclick='escolheu(this)'>
-                        <div></div>$S_1=2.S_2$</div>
+                        <div>B</div>$S_1=2.S_2$</div>
                     <div onclick='escolheu(this)' class=ce>
-                        <div></div>$S_1=3.S_2$</div>
+                        <div>C</div>$S_1=3.S_2$</div>
                     <div onclick='escolheu(this)'>
-                        <div></div>$S_1=\frac{3}{2}.S_2$</div>
+                        <div>D</div>$S_1=\frac{3}{2}.S_2$</div>
                     <div onclick='escolheu(this)'>
-                        <div></div>$S_1=\frac{4}{3}.S_2$</div>
+                        <div>E</div>$S_1=\frac{4}{3}.S_2$</div>
 
                 </div>
             </td>
@@ -104,23 +104,59 @@
 
 
         <p>Um cilindro pode ser classificado como <strong>reto</strong> ou <strong>oblíquo</strong>.</p>
-        <i class="fas fa-angle-right"></i> <strong>Cilindro reto:</strong> aquele cuja distância entre os centros das bases é igual à sua altra. Ou seja, seu eixo é perpendicular às bases.</br><i class="fas fa-angle-right"></i> <strong>Cilindro obliquo:</strong>        aquele cuja distância entre os centros das bases é maior que sua altura. Ou seja, seu eixo não é perpendicular às bases.
+        <i class="fas fa-angle-right"></i> <strong>Cilindro reto:</strong> aquele cuja distância entre os centros das bases é igual à sua altra. Ou seja, seu eixo é perpendicular às bases. Na planificação de um clindro reto a superfície curva se torna
+        um retângulo.</br>
+        <i class="fas fa-angle-right"></i> <strong>Cilindro obliquo:</strong> aquele cuja distância entre os centros das bases é maior que sua altura. Ou seja, seu eixo não é perpendicular às bases. Na planificação de um clindro obliquo a superfície curva
+        se torna um paralelogramo.
+
+        <p><strong>Área lateral e área total</strong></p>
+        <p>Como dito anteriormente, ao planificar um cilindro a superfície curva se torna um paralelogramo e, no casos dos cilindros retos, um retângulo. A altura desse paralelogramo tem a mesma medida da altura do cilindro. E a largura do paralelogramo
+            é igual ao perímetro da base do cilindro. Dessa forma, a área dessa superfície curva, que chamamos de <strong>área lateral</strong> do cilindro, é dada por</p>
+        <div class="destaque"><strong>Área lateral do cilindro</strong></br> $A_L=2\pi.r.h$</div>
+        <p>A <strong>área total</strong> da superfície de um cilindro é a soma se sua área lateral com as áreas das bases. Assim, temos que</p>
+        <div class="destaque"><strong>Área total do cilindro</strong></br> $A_T=2\pi.r.h+2\pi.r^2=2\pi.r(h+r)$</div>
+        <p>Atenção para as unidades de medida da altura e do raio! E atenção para não confundir raio com diâmetro!</p>
         <p><strong>Volume do Cilindro:</strong></p>
         <p>A fórmula para se calcular o volume de um cilindro é muito parecida com a fórmula para o volume de prismas. Porém, no caso dos cilindros, a área da base é a área de um círculo. </p>
         <div class="destaque"><strong>Volume do cilindro</strong></br> $V=\pi.r^2.h$</div>
-        <p onclick="completo(this);completo(this)">continuar</p>
-    </section>
-    <section class="incompleto" style="max-width: 1200px; padding: 0px max(calc(50% - 600px), 20px);">
-        <iframe scrolling="no" title="Volume cilindro" src="https://www.geogebra.org/material/iframe/id/tjbdf63z/width/1200/height/500/border/FFFFFF/sfsb/false/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" width="100%"
-            height="500px" style="border:0px;"> </iframe>
-        <p>fim</p>
+        <p>Com base em tudo o que foi exposto, resolva a seguinte questão do ENEM 2020:</p>
+        <p class="question"><strong>Questão 2 (ENEM 2020)</strong>. Uma loja de materiais de construção vende dois tipos de caixas-d’água: tipo A e tipo B. Ambas têm formato cilíndrico e possuem o mesmo volume, e a altura da caixa-d’água do tipo B é igual a 25% da altura
+            da caixa-d’água do tipo A.
+            </br>Se R denota o raio da caixa-d’água do tipo A, então o raio da caixa-d’água do tipo B é</p>
+        <div class="alternativas altern">
+            <div onclick='escolheu(this)'>
+                <div>A</div>$\frac{R}{2}$</div>
+            <div onclick='escolheu(this), completo(), completo()' class=ce>
+                <div>B</div>$2R$</div>
+            <div onclick='escolheu(this)'>
+                <div>C</div>$4R$</div>
+            <div onclick='escolheu(this)'>
+                <div>D</div>$5R$</div>
+            <div onclick='escolheu(this)'>
+                <div>E</div>$16R$</div>
+        </div>
+
     </section>
     <section class="incompleto">
-        Autora: Júlia
+        <p>Você pode usar essa aplicação do geogebra para verificar o que acontece quando: </br>
+            <i class="fas fa-caret-right"></i> reduzimos para $\frac{1}{4}$ da altura de um cilíndro e duplicamos o seu raio; </br>
+            <i class="fas fa-caret-right"></i> o que acontece quando dobramos o raio e mantemos a altura. </p>
+    </section>
+    <section class="incompleto" style="max-width: 1200px; padding: 0px max(calc(50% - 600px), 20px);">
+
+        <iframe scrolling="no" title="Volume cilindro" src="https://www.geogebra.org/material/iframe/id/tjbdf63z/width/1200/height/500/border/FFFFFF/sfsb/false/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" width="100%"
+            height="500px" style="border:0px;"> </iframe>
+        <p style="text-align: right;">Autora: Júlia</p>
+        <p style="text-align: center; font-size: 3em; margin:0px"><i class="fas fa-chevron-down"></i></p>
+    </section>
+    <section class="incompleto">
+
+        <div class='capa' style="background-image: url(img/capacone.jpg);"></div>
         <h2>Cone</h2>
         <p>Lorem ipsum.</p>
     </section>
     <section class="incompleto">
+        <div class='capa' style="background-image: url(img/capaesfera.jpg);"></div>
         <h2>Esfera</h2>
         <p>Lorem ipsum.</p>
     </section>

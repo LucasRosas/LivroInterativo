@@ -166,28 +166,36 @@ span {
 .alternativas>div {
     width: 200px;
     border-radius: 2px;
-    margin: 4px;
+    margin-bottom: 4px;
     cursor: pointer;
     display: flex;
     align-items: center;
 }
 
 .alternativas>div>div {
-    width: 8px;
-    height: 8px;
-    border: #3e6aac 7px solid;
+    font-weight: bold;
+    width: 10px;
+    height: 10px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 10px;
+    padding: 5px 5px;
+    border: #3e6aac 1px solid;
     border-radius: 100%;
     margin: 0 20px 0 10px;
 }
 
 .alternativas>div:hover>div {
-    border: #1b365e 7px solid;
+    border: #1b365e 1px solid;
+    color: white;
+    background-color: #1b365e;
     border-radius: 100%;
 }
 
 .escolhido>div {
     background-color: #1b365e !important;
-    border: #1b365e 7px solid !important;
+    border: #1b365e 1px solid !important;
+    color: white;
 }
 
 .fa-check {
@@ -198,4 +206,19 @@ span {
 .fa-times-circle {
     padding-left: 10px;
     color: rgb(199, 0, 0);
+}
+
+.question {
+    background-color: #e3efff;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 0px;
+    text-align: justify;
+}
+
+.altern {
+    margin-top: 0px;
+    background-color: #e3efff;
+    border-bottom: solid #6e87a7 2px;
+    border-radius: 0px 0px 10px 10px;
 }
