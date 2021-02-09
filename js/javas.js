@@ -1,4 +1,4 @@
-function verif_img(x) {
+function verif_img(x, y, z) {
     if (x.classList.contains('ce')) {
         x.innerHTML = '<img src="img/ce.png">'
         x.classList.add('certo')
@@ -15,14 +15,14 @@ function verif_img(x) {
         }
     }
 
-    libera(x)
+    libera(x, y, z)
 }
 
-function libera(x) {
+function libera(x, y, z) {
     if (x.parentElement.classList.contains('done')) {} else {
         certos = document.getElementsByClassName('certo').length
         errados = document.getElementsByClassName('errado').length
-        if (certos == 2 && errados == 0) {
+        if (certos == y && errados == z) {
             x.parentElement.classList.add('done')
             completo()
         }
@@ -37,7 +37,7 @@ function completo() {
     x = document.getElementsByClassName('incompleto')[0]
     x.style.display = 'block'
     x.classList.add('atual')
-        /* window.scrollTo(0, x.offsetTop - 400) */
+        // window.scrollTo(0, x.offsetTop - 400)
     npis = document.getElementsByClassName('mord').length
     for (i = 0; i < npis; i++) {
         pis = document.getElementsByClassName('mord')[i]

@@ -32,24 +32,25 @@
     <header>
         Corpos Redondos: Área e Volume
     </header>
-    <div id="subheader"></div>
+    <!-- <div id="subheader"></div> -->
     <section class="incompleto">
+        <div class='capa' style="background-image: url(img/pawel-czerwinski-bkGwwU_MNow-unsplash.jpg);"></div>
         <h2>Círculos</h2>
-        <p>Na geometria plana, um círculo é o conjunto de pontos cuja distância a um determinado ponto C, chamado de centro, é menor ou igual a um valor r, chamado de raio. Podemos associar a um círculo vários elementos a nossa volta. Marque a seguir as
-            imagens que possuem círculos.
+        <p>Na geometria plana, um círculo é o conjunto de pontos cuja distância a um determinado ponto <strong>C</strong>, chamado de centro, é menor ou igual a um valor <strong>r</strong>, chamado de raio. Podemos associar a um círculo vários elementos
+            a nossa volta. Marque a seguir as imagens que possuem círculos.
         </p>
         <div class="img-me-cont">
-            <div class="img-me ce" style="background-image: url('img/placa.jpg');" onclick="verif_img(this)"></div>
-            <div class="img-me er" style="background-image: url('img/cesta.jpg');" onclick="verif_img(this)"></div>
-            <div class="img-me ce" style="background-image: url('img/espelho.jpg');" onclick="verif_img(this)"></div>
-            <div class="img-me er" style="background-image: url('img/bambole.jpg');" onclick="verif_img(this)"></div>
+            <div class="img-me ce" style="background-image: url('img/placa.jpg');" onclick="verif_img(this,2,0)"></div>
+            <div class="img-me er" style="background-image: url('img/cesta.jpg');" onclick="verif_img(this,2,0)"></div>
+            <div class="img-me ce" style="background-image: url('img/espelho.jpg');" onclick="verif_img(this,2,0)"></div>
+            <div class="img-me er" style="background-image: url('img/bambole.jpg');" onclick="verif_img(this,2,0)"></div>
         </div>
 
     </section>
     <section class="incompleto">
         <p>Observe que círculo não é sinônimo de circunferência. Num plano, uma circunferência é o
-            <def>lugar geométrico</def> dos pontos cuja distância a um determinado ponto C, chamado de centro, é igual a um valor r, chamado de raio. Assim, podemos considerar que a circunferência é a borda de um círculo. A circunferência é uma curva e o círculo
-            é uma figura.</p>
+            <def>lugar geométrico</def> dos pontos cuja distância a um determinado ponto <strong>C</strong>, chamado de centro, é igual a um valor <strong>r</strong>, chamado de raio. Assim, podemos considerar que a circunferência é a borda de um círculo.
+            A circunferência é uma <strong>curva plana</strong> e o círculo é uma <strong>figura plana</strong>.</p>
         <p>O espaço que um círculo ocupa no plano é a sua área e depende apenas da medida do seu raio.
         </p>
         <div class="destaque">
@@ -59,7 +60,7 @@
         <p>A área de um circulo de raio r é dada por
             <def>$A=\pi.r^2$</def>. No vídeo a seguir você pode encontrar uma demonstração simplificada, mas bem interessante, para essa fórmula.</p>
         <iframe width="100%" height="400" src="https://www.youtube.com/embed/L0afrglXAWg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 10px;"></iframe>
-        <p><strong>Questão 1</strong>. Na figura os dois círculos de mesmo centro, possuem raios r e 2r. Eles determinam duas regiões: $S_1$ em azul e $S_2$ em verde. Determine a relação entre as áreas de $S_1$ e $S_2$.</p>
+        <p><strong>Questão 1</strong>. Na figura, os dois círculos são concêntricos e possuem raios de medidas r e 2r. Eles determinam duas regiões: $S_1$ em azul e $S_2$ em verde. Determine a relação entre as áreas de $S_1$ e $S_2$.</p>
         <table>
             <td><img src="img/q1.png" align="left" style="height: 250px;"></td>
             <td>
@@ -79,15 +80,40 @@
             </td>
         </table>
         <div>
-
-
         </div>
-        <p><strong>Questão 1</strong>. Na figura os dois círculos de mesmo centro, possuem raios r e 2r. Eles determinam duas regiões: $S_1$ em azul e $S_2$ em verde. Determine a razão entre as áreas de $S_1$ e $S_2$.</p>
+
     </section>
     <section class="incompleto">
-        <h2>Cilindro</h2>
-        <p>Lorem.</p>
+        <div class='capa' style="background-image: url(img/colin-watts-eTC2fQMgSC0-unsplash.jpg);"></div>
+        <h2>Cilindros</h2>
+        <p>Na geometria espacial, chamamos de cilindro, o sólido formado pelos segmentos cujas extremidades estão em dois círculos paralelos, congruentes e não coplanares. A distância <strong>h</strong> entre os dois círculos é chamada <strong>altura</strong>            do cilindro e os círculos são geralmente chamados de base do cilindro. O <strong>raio do cilindro</strong> é definido com sendo o raio da base do cilindro.</p>
+        <p><strong>Elementos do Cilindro:</strong></p>
+        <p>Para organizar melhor vamos definir alguns termos relacionados aos cilindros.</p>
+        <table>
+            <td><iframe scrolling="no" title="Cilindro Básico" src="https://www.geogebra.org/material/iframe/id/nhc74ntx/width/500/height/500/border/ffffff/sfsb/false/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/true/ld/false/sdz/false/ctl/false"
+                    width="300px" height="300px" style="border:0px;"> </iframe></td>
+            <td>
+                </br>
+                <i class="fas fa-caret-right"></i> <strong>Base:</strong> Cada um dos círculos paralelos.</br>
+                <i class="fas fa-caret-right"></i> <strong>Altura:</strong> Distância entre os círculos.</br>
+                <i class="fas fa-caret-right"></i> <strong>Eixo:</strong> Reta que contém os centros das bases.</br>
+                <i class="fas fa-caret-right"></i> <strong>Geratriz:</strong> Segmento paralelo ao eixo e com extremidades da borda da base.</br>
+                <i class="fas fa-caret-right"></i> <strong>Raio:</strong> raio da base.</br>
+            </td>
+        </table>
 
+
+        <p>Um cilindro pode ser classificado como <strong>reto</strong> ou <strong>oblíquo</strong>.</p>
+        <i class="fas fa-angle-right"></i> <strong>Cilindro reto:</strong> aquele cuja distância entre os centros das bases é igual à sua altra. Ou seja, seu eixo é perpendicular às bases.</br><i class="fas fa-angle-right"></i> <strong>Cilindro obliquo:</strong>        aquele cuja distância entre os centros das bases é maior que sua altura. Ou seja, seu eixo não é perpendicular às bases.
+        <p><strong>Volume do Cilindro:</strong></p>
+        <p>A fórmula para se calcular o volume de um cilindro é muito parecida com a fórmula para o volume de prismas. Porém, no caso dos cilindros, a área da base é a área de um círculo. </p>
+        <div class="destaque"><strong>Volume do cilindro</strong></br> $V=\pi.r^2.h$</div>
+        <p onclick="completo(this);completo(this)">continuar</p>
+    </section>
+    <section class="incompleto" style="max-width: 1200px; padding: 0px max(calc(50% - 600px), 20px);">
+        <iframe scrolling="no" title="Volume cilindro" src="https://www.geogebra.org/material/iframe/id/tjbdf63z/width/1200/height/500/border/FFFFFF/sfsb/false/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" width="100%"
+            height="500px" style="border:0px;"> </iframe>
+        <p>fim</p>
     </section>
     <section class="incompleto">
         Autora: Júlia

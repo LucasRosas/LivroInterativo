@@ -33,6 +33,9 @@ body {
 
 h2 {
     font-family: Gotham;
+    color: white;
+    font-size: 40px;
+    position: relative;
 }
 
 section {
@@ -42,6 +45,16 @@ section {
     text-align: justify;
     font-size: 17px;
     line-height: 25px;
+}
+
+.capa {
+    width: 100%;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    bottom: -70px;
 }
 
 def {
