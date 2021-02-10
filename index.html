@@ -69,7 +69,7 @@
                         <div>A</div>$S_1=S_2$</div>
                     <div onclick='escolheu(this)'>
                         <div>B</div>$S_1=2.S_2$</div>
-                    <div onclick='escolheu(this)' class=ce>
+                    <div onclick='escolheu(this)' class="ce">
                         <div>C</div>$S_1=3.S_2$</div>
                     <div onclick='escolheu(this)'>
                         <div>D</div>$S_1=\frac{3}{2}.S_2$</div>
@@ -113,7 +113,7 @@
         <p>Como dito anteriormente, ao planificar um cilindro a superfície curva se torna um paralelogramo e, no casos dos cilindros retos, um retângulo. A altura desse paralelogramo tem a mesma medida da altura do cilindro. E a largura do paralelogramo
             é igual ao perímetro da base do cilindro. Dessa forma, a área dessa superfície curva, que chamamos de <strong>área lateral</strong> do cilindro, é dada por</p>
         <div class="destaque"><strong>Área lateral do cilindro</strong></br> $A_L=2\pi.r.h$</div>
-        <p>A <strong>área total</strong> da superfície de um cilindro é a soma se sua área lateral com as áreas das bases. Assim, temos que</p>
+        <p>A <strong>área total</strong> da superfície de um cilindro é a soma de sua área lateral com as áreas das bases. Assim, temos que</p>
         <div class="destaque"><strong>Área total do cilindro</strong></br> $A_T=2\pi.r.h+2\pi.r^2=2\pi.r(h+r)$</div>
         <p>Atenção para as unidades de medida da altura e do raio! E atenção para não confundir raio com diâmetro!</p>
         <p><strong>Volume do Cilindro:</strong></p>
@@ -126,7 +126,7 @@
         <div class="alternativas altern">
             <div onclick='escolheu(this)'>
                 <div>A</div>$\frac{R}{2}$</div>
-            <div onclick='escolheu(this), completo(), completo()' class=ce>
+            <div onclick='escolheu(this), completo(), completo()' class="ce">
                 <div>B</div>$2R$</div>
             <div onclick='escolheu(this)'>
                 <div>C</div>$4R$</div>
@@ -138,9 +138,9 @@
 
     </section>
     <section class="incompleto">
-        <p>Você pode usar essa aplicação do geogebra para verificar o que acontece quando: </br>
-            <i class="fas fa-caret-right"></i> reduzimos para $\frac{1}{4}$ da altura de um cilíndro e duplicamos o seu raio; </br>
-            <i class="fas fa-caret-right"></i> o que acontece quando dobramos o raio e mantemos a altura. </p>
+        <p>Você pode usar essa aplicação do geogebra para verificar o que acontece com o volume de um cilindro quando: </br>
+            <i class="fas fa-caret-right"></i> reduzimos sua altura para $\frac{1}{4}$ de sua medida o e duplicamos o seu raio; </br>
+            <i class="fas fa-caret-right"></i> dobramos o raio e mantemos a altura. </p>
     </section>
     <section class="incompleto" style="max-width: 1200px; padding: 0px max(calc(50% - 600px), 20px);">
 
@@ -153,7 +153,50 @@
 
         <div class='capa' style="background-image: url(img/capacone.jpg);"></div>
         <h2>Cone</h2>
-        <p>Lorem ipsum.</p>
+        <p>Casquinhas de sorvete, funis, cones de transito, telhados de castelos e igrejas, árvores de natal, chapeis de festa, pontas de lápis, de brocas e de parafusos são alguns dos exemplos de objetos e elementos que possuem formato de cone. Esse sólido
+            geométrico é formado por uma base circular e os segmentos com extremidades na base e num ponto externo chamado vértice. Os cones podem ser classificados como <strong>retos</strong> ou <strong>oblíquos</strong>, assim como os cilindros.</p>
+        <p>Os <strong>cones retos</strong> são aqueles cujo segmento que liga o vértice ao centro da base é perpendicular à base. São sólidos gerados pela rotação completa de um triangulo retângulo em torno de um de seus catetos.</p>
+        <p>Os <strong>cones oblíquos</strong> são aqueles que não são retos. Eles não são sólidos de rotação.</p>
+        <h3>Elementos do cone</h3>
+        <i class="fas fa-caret-right"></i> <strong>Base: </strong>superfície circular do cone. </br>
+        <i class="fas fa-caret-right"></i> <strong>Vértice:</strong> ponto do cone mais distante da sua base.</br>
+        <i class="fas fa-caret-right"></i> <strong>Geratriz:</strong> qualquer segmento <strong>g</strong> que liga o vértice à borda da base.
+        </br>
+        <i class="fas fa-caret-right"></i> <strong>Eixo:</strong> segmento que liga o vértice ao centro da base.</br>
+        <i class="fas fa-caret-right"></i> <strong>Raio:</strong> raio <strong>r</strong> da base
+        </br>
+        <i class="fas fa-caret-right"></i> <strong>Altura:</strong> distância entre o vértice e a base
+        <h3>Planificação</h3>
+        <p>O conjunto das geratrizes do cone forma sua superfície curva. Quando planificada ela se torna um setor circular de raio <strong>g</strong> e cujo arco tem a mesma medida que o perímetro da base do cone.</p>
+        <p>Usando uma regra de três simples e direta podemos determinar a área dessa superfície curva. A área do círculo de raio g está para seu perímetro, assim como a área do setor está para seu arco. Observe:</p>
+        <p style="text-align: center">$\frac{\pi {{g}^{2}}}{2\pi g}=\frac{A}{2\pi r}\Rightarrow \frac{\cancel{\pi }{{g}^{\cancel{2}}}}{\bcancel{2}\cancel{\pi }\cancel{g}}=\frac{A}{\bcancel{2}\pi r}\Rightarrow A=\pi rg$</p>
+        <p>Assim, temos que</p>
+        <div class="destaque"><strong>Área lateral do cone</strong></br> $A_L=\pi rg$</div>
+        <p>A área total do cone é a soma de sua área lateral com a área da base, e por isso podemos escrever:</p>
+        <div class="destaque"><strong>Área total do cone</strong></br> $A_T=\pi rg + \pi r^2 =\pi r(g+r)$</div>
+        <h3>Volume do Cone</h3>
+        <p>Usando o
+            <def>princípio de Cavalieri</def> ou, de forma mais simplista, se considerarmos que um cone é como uma pirâmide cuja base possui infinitos lados, podemos determinar seu volume da seguinte forma:</p>
+        <div class="destaque"><strong>Volume do cone</strong></br> $V=\frac{\pi r^2h}{3}$</div>
+        <p class="question"><strong>Questão 3 (ENEM 2016)</strong> Em regiões agrícolas, é comum a presença de silos para armazenamento e secagem da produção de grãos, no formato de um cilindro reto, sobreposto por um cone, e dimensões indicadass na figura. O silo fica cheio
+            e o transporte dos grãos é feito em caminhões de carga cuja capacidade é de 20 m³. Uma região possui um silo cheio e apenas um caminhão para transportar os grãos para a usina de beneficiamento.</br>
+            <img src="img/enemcone.png" height="300px" style="justify-content: center; margin-left: calc(50% - 190px)">
+            </br>
+            Utilize 3 como aproximação para $\pi$.</br>
+            O número mínimo de viagens que o caminhão precisará fazer para transportar todo o volume de grãos armazenados no silo é
+        </p>
+        <div class="alternativas altern">
+            <div onclick='escolheu(this)'>
+                <div>A</div>6</div>
+            <div onclick='escolheu(this)'>
+                <div>B</div>16</div>
+            <div onclick='escolheu(this)'>
+                <div>C</div>17</div>
+            <div onclick='escolheu(this)' class="ce">
+                <div>D</div>18</div>
+            <div onclick='escolheu(this)'>
+                <div>E</div>21</div>
+        </div>
     </section>
     <section class="incompleto">
         <div class='capa' style="background-image: url(img/capaesfera.jpg);"></div>
