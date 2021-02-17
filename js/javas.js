@@ -72,3 +72,34 @@ function escolheu(x) {
         }
     }
 }
+
+function resol(x) {
+    y = document.getElementById('resol')
+    y.innerHTML = `<img src="img/reso${x}.png"><div id="close" onclick="fecha()"><i class="far fa-times-circle"></i></div>`
+    y.style.display = 'block'
+}
+
+function fecha() {
+    y = document.getElementById('resol').style.display = 'none'
+}
+
+function mostratudo() {
+    sele = document.getElementsByClassName('incompleto').length
+    for (i = 0; i < sele; i++) {
+        document.getElementsByClassName('incompleto')[0].classList.remove('incompleto')
+    }
+}
+
+function verifica(x) {
+    var litros = Number(document.getElementById('ano').value);
+    if (litros == 765) {
+        x.classList.remove('errou')
+        document.getElementById('ano').style.display = 'none';
+        document.getElementById('ano').nextElementSibling.style.display = 'inline';
+        document.getElementById('ano').nextElementSibling.textContent = litros;
+        x.innerHTML = 'Certo!'
+    } else {
+        document.getElementById('ano').style.backgroundColor = 'darkred';
+
+    }
+}

@@ -22,20 +22,38 @@
 
     <!-- fórmulas matemáticas -->
 
+
+
     <link rel="stylesheet" href="css/katex.min.css" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.0/jspdf.umd.min.js"></script>
 
 
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+
 </head>
 
 <body>
+
+    <div id="resol" style="display: none;"></div>
+
     <header>
-        Corpos Redondos: Área e Volume
+        <div><img src="img/logo.png" style="display: inline-block; mix-blend-mode: darken; text-align: center; height: 40px; margin-right: 20px;"></div>
+        <div>Corpos Redondos: Área e Volume</div>
     </header>
     <!-- <div id="subheader"></div> -->
+
+
+
+
+
+
+
+
+
     <section class="incompleto">
         <div class='capa' style="background-image: url(img/pawel-czerwinski-bkGwwU_MNow-unsplash.jpg);"></div>
         <h2>Círculos</h2>
+        <p onclick="mostratudo()">Mostrar tudo</p>
         <p>Na geometria plana, um círculo é o conjunto de pontos cuja distância a um determinado ponto <strong>C</strong>, chamado de centro, é menor ou igual a um valor <strong>r</strong>, chamado de raio. Podemos associar a um círculo vários elementos
             a nossa volta. Marque a seguir as imagens que possuem círculos.
         </p>
@@ -51,19 +69,19 @@
         <p>Observe que círculo não é sinônimo de circunferência. Num plano, uma circunferência é o
             <def>lugar geométrico</def> dos pontos cuja distância a um determinado ponto <strong>C</strong>, chamado de centro, é igual a um valor <strong>r</strong>, chamado de raio. Assim, podemos considerar que a circunferência é a borda de um círculo.
             A circunferência é uma <strong>curva plana</strong> e o círculo é uma <strong>figura plana</strong>.</p>
-        <p>O espaço que um círculo ocupa no plano é a sua área e depende apenas da medida do seu raio.
-        </p>
-        <div class="destaque">
-            <p><strong>Círculo</strong> possui área e perímetro.</p>
-            <p><strong>Circunferência</strong> possui comprimento.</p>
-        </div>
-        <p>A área de um circulo de raio r é dada por
-            <def>$A=\pi.r^2$</def>. No vídeo a seguir você pode encontrar uma demonstração simplificada, mas bem interessante, para essa fórmula.</p>
+        <p>O espaço que um círculo ocupa no plano é a sua área e depende apenas da medida do seu raio. A área e o perímetro de um círculo de raio r são dados por
+            <div class="destaque">
+                <strong>Círculo</strong> possui área e perímetro.</br>$A_{círculo} = \pi.r^2$ e $p_{círculo} = 2\pi.r$
+            </div>
+            <p>A circunferência, por ser uma curva, possui comprimento.</p>
+            <div class="destaque">
+                <strong>Circunferência</strong> possui comprimento.</br>$C_{circunferência}=2\pi.r$
+            </div>
+            No vídeo a seguir você pode encontrar uma demonstração simplificada, mas bem interessante, para essa fórmula.</p>
         <iframe width="100%" height="400" src="https://www.youtube.com/embed/L0afrglXAWg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 10px;"></iframe>
-        <p class="question"><strong>Questão 1</strong>. Na figura, os dois círculos são concêntricos e possuem raios de medidas r e 2r. Eles determinam duas regiões: $S_1$ em azul e $S_2$ em verde. Determine a relação entre as áreas de $S_1$ e $S_2$.</p>
-        <table class="altern">
-            <td><img src="img/q1.png" align="left" style="height: 250px;"></td>
-            <td style="width: 100%;">
+        <p class="question"><strong>Questão 1</strong>. Na figura, os dois círculos são concêntricos e possuem raios de medidas r e 2r. Eles determinam duas regiões: uma em azul, de área $S_1$, e outra em verde, de área $S_2$. Determine a relação entre as áreas $S_1$ e $S_2$.</p>
+        <table class="altern" style="width: 100%;">
+            <td style="width: 50%;">
                 <div class="alternativas">
                     <div onclick='escolheu(this)'>
                         <div>A</div>$S_1=S_2$</div>
@@ -78,12 +96,15 @@
 
                 </div>
             </td>
-        </table>
-        <div>
-        </div>
+            <td><img src="img/q1.png" align="left" style="height: 250px;"></td>
 
+        </table>
     </section>
     <section class="incompleto">
+        <p onclick="resol(1)" style="cursor:pointer">Muito bem! Gostaria de ver a resolução que preparamos?
+            <def>Clique aqui</def>.</p>
+        <p>A região em azul desse exercício é chamada <strong>Coroa Circular</strong>. Se <strong>R</strong> é seu raio externo e <strong>r</strong> é seu raio interno, então sua área é dada por:</p>
+        <div class="destaque"><strong>Área da Coroa Circular</strong></br> $A_{coroa}=\pi(R^2-r^2)$</div>
         <div class='capa' style="background-image: url(img/colin-watts-eTC2fQMgSC0-unsplash.jpg);"></div>
         <h2>Cilindros</h2>
         <p>Na geometria espacial, chamamos de cilindro, o sólido formado pelos segmentos cujas extremidades estão em dois círculos paralelos, congruentes e não coplanares. A distância <strong>h</strong> entre os dois círculos é chamada <strong>altura</strong>            do cilindro e os círculos são geralmente chamados de base do cilindro. O <strong>raio do cilindro</strong> é definido com sendo o raio da base do cilindro.</p>
@@ -124,6 +145,7 @@
             da caixa-d’água do tipo A.
             </br>Se R denota o raio da caixa-d’água do tipo A, então o raio da caixa-d’água do tipo B é</p>
         <div class="alternativas altern">
+
             <div onclick='escolheu(this)'>
                 <div>A</div>$\frac{R}{2}$</div>
             <div onclick='escolheu(this), completo(), completo()' class="ce">
@@ -134,18 +156,21 @@
                 <div>D</div>$5R$</div>
             <div onclick='escolheu(this)'>
                 <div>E</div>$16R$</div>
+
         </div>
 
     </section>
     <section class="incompleto">
+        <p onclick="resol(2)" style="cursor:pointer">Muito bem! Gostaria de ver a resolução que preparamos?
+            <def>Clique aqui</def>.</p>
         <p>Você pode usar essa aplicação do geogebra para verificar o que acontece com o volume de um cilindro quando: </br>
-            <i class="fas fa-caret-right"></i> reduzimos sua altura para $\frac{1}{4}$ de sua medida o e duplicamos o seu raio; </br>
+            <i class="fas fa-caret-right"></i> reduzimos sua altura para $\frac{1}{4}$ de sua medida e duplicamos o seu raio; ou</br>
             <i class="fas fa-caret-right"></i> dobramos o raio e mantemos a altura. </p>
     </section>
-    <section class="incompleto" style="max-width: 1200px; padding: 0px max(calc(50% - 600px), 20px);">
+    <section class="incompleto" style="max-width: 1200px; padding: 0px max(calc(50% - 600px), 20px); height: 500px; background-image: url(img/backg.png); background-position: center; background-size: cover;">
 
-        <iframe scrolling="no" title="Volume cilindro" src="https://www.geogebra.org/material/iframe/id/tjbdf63z/width/1200/height/500/border/FFFFFF/sfsb/false/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" width="100%"
-            height="500px" style="border:0px;"> </iframe>
+        <iframe scrolling="no" title="Volume cilindro" src="https://www.geogebra.org/material/iframe/id/tjbdf63z/width/1200/border/FFFFFF/sfsb/false/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" width="100%"
+            height="100%" style="border:0px; height: 500px; "> </iframe>
         <p style="text-align: right;">Autora: Júlia</p>
         <p style="text-align: center; font-size: 3em; margin:0px"><i class="fas fa-chevron-down"></i></p>
     </section>
@@ -153,21 +178,25 @@
 
         <div class='capa' style="background-image: url(img/capacone.jpg);"></div>
         <h2>Cone</h2>
-        <p>Casquinhas de sorvete, funis, cones de transito, telhados de castelos e igrejas, árvores de natal, chapeis de festa, pontas de lápis, de brocas e de parafusos são alguns dos exemplos de objetos e elementos que possuem formato de cone. Esse sólido
+        <p>Casquinhas de sorvete, funis, cones de transito, telhados de castelos e igrejas, árvores de natal, chapéus de festa, pontas de lápis, de brocas e de parafusos são alguns dos exemplos de objetos e elementos que possuem formato de cone. Esse sólido
             geométrico é formado por uma base circular e os segmentos com extremidades na base e num ponto externo chamado vértice. Os cones podem ser classificados como <strong>retos</strong> ou <strong>oblíquos</strong>, assim como os cilindros.</p>
         <p>Os <strong>cones retos</strong> são aqueles cujo segmento que liga o vértice ao centro da base é perpendicular à base. São sólidos gerados pela rotação completa de um triangulo retângulo em torno de um de seus catetos.</p>
         <p>Os <strong>cones oblíquos</strong> são aqueles que não são retos. Eles não são sólidos de rotação.</p>
+        <p style="text-align: center;"><img src="img/conereo.jpg" height="200px"></p>
         <h3>Elementos do cone</h3>
         <i class="fas fa-caret-right"></i> <strong>Base: </strong>superfície circular do cone. </br>
         <i class="fas fa-caret-right"></i> <strong>Vértice:</strong> ponto do cone mais distante da sua base.</br>
         <i class="fas fa-caret-right"></i> <strong>Geratriz:</strong> qualquer segmento <strong>g</strong> que liga o vértice à borda da base.
         </br>
         <i class="fas fa-caret-right"></i> <strong>Eixo:</strong> segmento que liga o vértice ao centro da base.</br>
-        <i class="fas fa-caret-right"></i> <strong>Raio:</strong> raio <strong>r</strong> da base
+        <i class="fas fa-caret-right"></i> <strong>Raio:</strong> raio <strong>r</strong> da base.
         </br>
-        <i class="fas fa-caret-right"></i> <strong>Altura:</strong> distância entre o vértice e a base
+        <i class="fas fa-caret-right"></i> <strong>Altura:</strong> distância entre o vértice e a base.
+        <p style="text-align: center;"><img src="img/elemcone.jpg" height="200px"></p>
         <h3>Planificação</h3>
         <p>O conjunto das geratrizes do cone forma sua superfície curva. Quando planificada ela se torna um setor circular de raio <strong>g</strong> e cujo arco tem a mesma medida que o perímetro da base do cone.</p>
+
+
         <p>Usando uma regra de três simples e direta podemos determinar a área dessa superfície curva. A área do círculo de raio g está para seu perímetro, assim como a área do setor está para seu arco. Observe:</p>
         <p style="text-align: center">$\frac{\pi {{g}^{2}}}{2\pi g}=\frac{A}{2\pi r}\Rightarrow \frac{\cancel{\pi }{{g}^{\cancel{2}}}}{\bcancel{2}\cancel{\pi }\cancel{g}}=\frac{A}{\bcancel{2}\pi r}\Rightarrow A=\pi rg$</p>
         <p>Assim, temos que</p>
@@ -175,10 +204,19 @@
         <p>A área total do cone é a soma de sua área lateral com a área da base, e por isso podemos escrever:</p>
         <div class="destaque"><strong>Área total do cone</strong></br> $A_T=\pi rg + \pi r^2 =\pi r(g+r)$</div>
         <h3>Volume do Cone</h3>
+        <p>Imagine a seguinte situação:</p>
+        <p style="text-align: center;"><img src="img/filtro.jpg" height="300px"></p>
+        <p>Esse filtro de papel é formado dobrando um semicírculo ao meio. Se, ao "passar" (filtrar) um café, o coador estiver entupido, qual a quantidade máxima de água (e café), em litros, que esse filtro conseguirá segurar? Quais informações precisaremos
+            para resolver esse problema?</p>
+        <p>Esse papel é a face lateral de um cone. Conhecendo seu raio (geratriz) e ângulo central (180°), podemos encontrar o comprimento do arco, e então poderemos calcular o raio da base do cilindro. Depois, usando o Teorema de Pitágoras encontraremos
+            a altura do cone. E assim teremos todas as informações para calcular sua capacidade.</p>
         <p>Usando o
             <def>princípio de Cavalieri</def> ou, de forma mais simplista, se considerarmos que um cone é como uma pirâmide cuja base possui infinitos lados, podemos determinar seu volume da seguinte forma:</p>
         <div class="destaque"><strong>Volume do cone</strong></br> $V=\frac{\pi r^2h}{3}$</div>
-        <p class="question"><strong>Questão 3 (ENEM 2016)</strong> Em regiões agrícolas, é comum a presença de silos para armazenamento e secagem da produção de grãos, no formato de um cilindro reto, sobreposto por um cone, e dimensões indicadass na figura. O silo fica cheio
+        <p>Agora é a sua vez! Voltando ao problema do filtro, a quantidade de água, em mililitros, que esse filtro suporta é, no máximo, aproximadamente <input type="text" name="ano" id="ano" value="???" onclick="this.value=''"><span style="display: none; color: rgb(2, 187, 2)">:</span>            ml. Use um número inteiro para dar a resposta.</p>
+        <button onclick="verifica(this)" class="errou">Verificar</button>
+        <p>A seguinte questão, do ENEM 2016, também é um bom exercício de fixação.</p>
+        <p class="question"><strong>Questão 3 (ENEM 2016)</strong> Em regiões agrícolas, é comum a presença de silos para armazenamento e secagem da produção de grãos, no formato de um cilindro reto, sobreposto por um cone, e dimensões indicadas na figura. O silo fica cheio
             e o transporte dos grãos é feito em caminhões de carga cuja capacidade é de 20 m³. Uma região possui um silo cheio e apenas um caminhão para transportar os grãos para a usina de beneficiamento.</br>
             <img src="img/enemcone.png" height="300px" style="justify-content: center; margin-left: calc(50% - 190px)">
             </br>
@@ -199,11 +237,92 @@
         </div>
     </section>
     <section class="incompleto">
+        <p onclick="resol(3)" style="cursor:pointer">Muito bem! Gostaria de ver a resolução que preparamos?
+            <def>Clique aqui</def>.</p>
+        <h3>Tronco de Cone</h3>
+        <p>Quando seccionamos um cone por um plano paralelo a sua base formamos dois sólicos: um cone que contém o vértice do cone original e um sólido chamado <strong>Tronco de Cone</strong>. Para calcular o volume de um tronco de cone, basta considerar
+            o volume do cone original e subtrair dele o volume do cone menor. Os dois cones são semelhantes, então lembre-se:</p>
+        <div class="destaque">Se dois sólidos são semelhantes, então a razão entre os volumes é o cubo da razão de semelhança.</br>
+            <img src="img/razvol.png" height="200px"> </br>Assim, considerando $V_1$ o volume do maior cone e $V_2$ o volume do menor, tem-se</br> <img src="img/razvoleq.png" height="50px"></div>
+
+        <p class="question"><strong>Questão 4 (ENEM 2013)</strong> Uma cozinheira, especialista em fazer bolos, utiliza uma forma no formato representado na figura:</br>
+            <img src="img/enem2013.png" height="150px" style="justify-content: center; margin-left: calc(50% - 75px); mix-blend-mode: darken;">
+            </br>Nela identifica-se a representação de duas figuras geométricas tridimensionais. Essas figuras são</p>
+        <div class="alternativas altern">
+
+            <div onclick='escolheu(this)'>
+                <div>A</div>um tronco de cone e um cilindro.</div>
+            <div onclick='escolheu(this)'>
+                <div>B</div>um cone e um cilindro.</div>
+            <div onclick='escolheu(this)'>
+                <div>C</div>um tronco de pirâmide e um cilindro.</div>
+            <div onclick='escolheu(this)' class="ce">
+                <div>D</div>
+                dois troncos de cone.</div>
+            <div onclick='escolheu(this)'>
+                <div>E</div>dois cilindros.</div>
+
+        </div>
+    </section>
+    <section class="incompleto">
+        <p>As formas de bolo têm esse formato para diminuir o tempo de cozimento, para que no final o bolo tenha uma maior altura e para que seja mais fácil o desenformar.</p>
         <div class='capa' style="background-image: url(img/capaesfera.jpg);"></div>
         <h2>Esfera</h2>
-        <p>Lorem ipsum.</p>
-    </section>
+        <p>Na Geometria Espacial, chamamos de esfera o sólido formado por todos os pontos que estão a no máximo uma distância R (o raio) de um ponto C (o centro). </p>
+        <p>Uma esfera também é um sólido de rotação, como o cilindro reto e o cone reto. Ao girar um circulo 180° em torno de seu eixo central obtemos uma esfera.</p>
+        <h3>Volume da esfera</h3>
+        <p>Antes de estudarmos as partes e elementos de uma esfera vamos entender como calculamos seu volume e sua área superficial.
+        </p>
+        <p> Na aplicação a seguir, temos três sólidos de mesma altura: um cilindro, um cone "de duas folhas", ou seja, com um outro cone em cima, e uma esfera. Na verdade, para a esfera o que chamamos de altura aqui é seu diâmetro. Usando o ponto interior
+            ao cilindro, você pode mover o plano azul. Abaixo vai aparecer as seções e suas áreas. Você consegue observar o padrão nas áreas?</p>
+        <iframe scrolling="no" title="Cavalieri e Esfera" src="https://www.geogebra.org/material/iframe/id/jqxt47za/width/800/height/700/border/FFFFFF/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false"
+            width="800px" height="700px" style="border:0px;"> </iframe>
+        <p style="text-align: right;">Autor: Brad Ballinger</p>
+        <p>Observe também que os raios do cilindro, da base dos cones e da esfera são iguais a 1. Caso não tenha notado, a área da seção do cilindro é igual a soma das áreas das seções do cone e da esfera. Inclusive, se você clicar em "Show Details" você
+            poderá ver o uso do teorema de Pitágoras para mostrar as relações entre as áreas.</p>
+        <p>Usando essa relação, pelo princípio de Cavalieri, podemos concluir que:</p>
+        <div class="destaque"><strong>Volume da Esfera</strong></br>$V_{esfera}=\frac{4}{3}.\pi.r^3$
+            </br>
+        </div>
+        <h3>Área superficial de uma esfera</h3>
+        <p>Você já deve ter visto nas aulas de geografia as
+            <def>Projeções Cartográficas</def>. E sabe que não existe uma forma de planificar o planeta Terra sem que hajam distorções. A falta de solução para esse problema já foi provado por Gauss (1777-1855) e é estudada num ramo da Matemática chamado Geometria
+            Diferencial. No site a seguir você pode observar como a projeção cartográfica que usamos no google maps não nos permite comparar as áreas dos países.</p>
+        <p>Observe o que acontece quando movemos um país para próximo da linha do equador ou em direção aos pólos.</p>
+        <iframe scrolling="no" src="https://thetruesize.com/#?borders=1~!MTc0NjgxOTM.MjMzODMwMA*MjgyMzkxNzU(MjE1MzIzNw~!CONTIGUOUS_US*MTQyMjY4OTI.Mjk1ODE2OTE(MTc1)MA~!IN*NTI2NDA1MQ.Nzg2MzQyMQ)MQ~!CN*MTUwMzA3MDI.OTMyOTI0NQ(MjI1)Mg~!PY*MTc0MDQ1Nw.MjAzNTQ3NjI)Mw~!RU*ODE5MzI4.NjQ0Njk4OA)NA~!DE*MzYxNzM1Ng.MTYxODczODE)NQ"
+            width="800px" height="400px"></iframe>
 
+        <p>Por conta dessa limitação, não podemos encontrar a área superficial de uma esfera usando uma planificação. Mas podemos usar algumas técnicas para calcular com exatidão essa área, só que esse não é nosso objetivo agora. Nesse
+            <a href="https://www.youtube.com/watch?v=nrYbwzfBxvY" target="_blank" style="text-decoration: none;">
+                <def>vídeo</def>
+            </a>você pode ver uma demonstração para a fórmula. Por enquanto, basta dizer que a área superfícial de uma esfera é dada por</p>
+        <div class="destaque"><strong>Área da esfera</strong></br> $A_{esfera}=4.\pi r^2$</div>
+        <h3>Partes e elementos da Esfera</h3>
+        <p>Antes de seguir vamos lembrar dessa cena do MasterChef Brasil 2015:</p>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/XGIpAnjyqKA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>Ignorando o fato de que a melancia da Jiang tem duas metades e mais uma sobra (Matematicamente impossível), vamos usar uma melancia e seus cortes para entender as partes de uma esfera. Vamos com calma!</p>
+        <h3>Cunha e fuso</h3>
+        <p>Quanto rotacionamos um semicírculo em torno do seu eixo por um ângulo $\alpha$ menor que 360° obtemos uma <strong>cunha esférica</strong>. A cunha esférica é o formato de uma fatia padrão de melancia.</p>
+        <p style="text-align: center;"><img src="img/cunha.jpg" height="200px"></p>
+        <p>O volume de uma cunha é proporcional à medida do ângulo $\alpha$, em graus. Assim:</p>
+        <div class="destaque"><strong>Volume da cunha de ângulo central $\alpha$</strong></br>$V_{cunha}=\frac{\alpha}{180°}\frac{4}{3}\pi.r^3$
+        </div>
+        <p>O <strong>fuso</strong> é a superfície curva de uma cunha esférica. É a casca de uma fatia de melancia.</p>
+        <p style="text-align: center;"><img src="img/fuso.jpg" height="200px"></p>
+        <p>A área de um fuso é proporcional à medida do ângulo $\alpha,$ em graus. Assim:</p>
+        <div class="destaque"><strong>Área do fuso de ângulo central $\alpha$</strong></br>$A_{fuso}=\frac{\alpha.4.\pi.r^2}{180°}$
+        </div>
+        <h3>Calota, Zona e Hemisfério</h3>
+        <p>Uma <strong>calota</strong> é cada uma das a partes da esfera quando cortada por um plano. Observe no vídeo essa forma estranha de cortar uma melancia. Se a melancia fosse uma esfera, cada uma das partes seria uma calota.</p>
+        <p style="text-align: center;"><video src="img/Cut a Watermelon Step 2 Version 3.360p.mp4" autoplay loop height="250px"></video></p>
+        <p>Uma <strong>zona</strong> é a região da esfera entre duas seções paralelas.</p>
+        <p>Um <strong>hemisfério</strong> é uma calota fomada quando um plano secciona a esfera passando pelo seu centro.</p>
+        <p style="text-align: center;"><img src="img/partesesfera.jpg" height="200px"></p>
+        <h3>Conclusão</h3>
+        <p>Agora que vimos os principais corpos redondos, suas partes, volume e área superficial, chegamos ao fim dessa atividade. Espero que tenha sido um tempo de muita aprendizagem. Caso tenha alguma dúvida, mande uma mensagem!</p>
+    </section>
+    <section class="incompleto">
+    </section>
 
 
     <script type="module">
