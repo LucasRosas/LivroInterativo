@@ -103,3 +103,40 @@ function verifica(x) {
 
     }
 }
+
+function altura() {
+
+    let alturaf = document.documentElement.clientHeight
+    let altura = Math.max(
+        document.body.scrollHeight, document.documentElement.scrollHeight,
+        document.body.offsetHeight, document.documentElement.offsetHeight,
+        document.body.clientHeight, document.documentElement.clientHeight
+    );
+    a = window.pageYOffset
+    b = altura - alturaf + 1
+    c = 100 * a / 14915
+    document.getElementById('linha').style.width = c + '%'
+}
+
+
+
+
+window.onscroll = function() { altura() };
+
+function def(x) {
+    document.getElementsByClassName('boxdef')[x].style.display = 'block'
+    var pageX = event.pageX + 20;
+    var pageY = event.pageY - window.pageYOffset;
+    document.getElementsByClassName('boxdef')[x].style.left = pageX + 'px'
+    document.getElementsByClassName('boxdef')[x].style.top = pageY + 'px'
+
+
+}
+
+function outdef() {
+    sele = document.getElementsByClassName('boxdef').length
+    for (i = 0; i < sele; i++) {
+        document.getElementsByClassName('boxdef')[i].style.display = 'none'
+    }
+
+}

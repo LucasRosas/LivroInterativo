@@ -40,9 +40,14 @@
         <div><img src="img/logo.png" style="display: inline-block; mix-blend-mode: darken; text-align: center; height: 40px; margin-right: 20px;"></div>
         <div>Corpos Redondos: Área e Volume</div>
     </header>
+    <div id='linha'></div>
     <!-- <div id="subheader"></div> -->
 
-
+    <div class="boxdef" style="display: none;">Conjunto de pontos com propriedades em comum.</br>
+        </br><i class="fab fa-youtube"></i> Clique para assistir a um vídeo e entender melhor.</div>
+    <div class="boxdef" style="display: none;">Princípio usado para calcular volumes usando sólidos de mesma altura e seções planas de mesma área.;</br>
+        </br><i class="fab fa-youtube"></i> Clique para assistir a um vídeo e entender melhor.</div>
+    <div class="boxdef" style="display: none;">Cque</div>
 
 
 
@@ -53,7 +58,6 @@
     <section class="incompleto">
         <div class='capa' style="background-image: url(img/pawel-czerwinski-bkGwwU_MNow-unsplash.jpg);"></div>
         <h2>Círculos</h2>
-        <p onclick="mostratudo()">Mostrar tudo</p>
         <p>Na geometria plana, um círculo é o conjunto de pontos cuja distância a um determinado ponto <strong>C</strong>, chamado de centro, é menor ou igual a um valor <strong>r</strong>, chamado de raio. Podemos associar a um círculo vários elementos
             a nossa volta. Marque a seguir as imagens que possuem círculos.
         </p>
@@ -67,8 +71,10 @@
     </section>
     <section class="incompleto">
         <p>Observe que círculo não é sinônimo de circunferência. Num plano, uma circunferência é o
-            <def>lugar geométrico</def> dos pontos cuja distância a um determinado ponto <strong>C</strong>, chamado de centro, é igual a um valor <strong>r</strong>, chamado de raio. Assim, podemos considerar que a circunferência é a borda de um círculo.
-            A circunferência é uma <strong>curva plana</strong> e o círculo é uma <strong>figura plana</strong>.</p>
+            <a href="https://www.youtube.com/watch?v=KCddkOfC8SU" target="_blank" style="text-decoration: none;">
+                <def id="def" onmouseover="def(0)" onmouseout="outdef()">lugar geométrico</def>
+            </a> dos pontos cuja distância a um determinado ponto <strong>C</strong>, chamado de centro, é igual a um valor <strong>r</strong>, chamado de raio. Assim, podemos considerar que a circunferência é a borda de um círculo. A circunferência é uma
+            <strong>curva plana</strong> e o círculo é uma <strong>figura plana</strong>.</p>
         <p>O espaço que um círculo ocupa no plano é a sua área e depende apenas da medida do seu raio. A área e o perímetro de um círculo de raio r são dados por
             <div class="destaque">
                 <strong>Círculo</strong> possui área e perímetro.</br>$A_{círculo} = \pi.r^2$ e $p_{círculo} = 2\pi.r$
@@ -211,7 +217,9 @@
         <p>Esse papel é a face lateral de um cone. Conhecendo seu raio (geratriz) e ângulo central (180°), podemos encontrar o comprimento do arco, e então poderemos calcular o raio da base do cilindro. Depois, usando o Teorema de Pitágoras encontraremos
             a altura do cone. E assim teremos todas as informações para calcular sua capacidade.</p>
         <p>Usando o
-            <def>princípio de Cavalieri</def> ou, de forma mais simplista, se considerarmos que um cone é como uma pirâmide cuja base possui infinitos lados, podemos determinar seu volume da seguinte forma:</p>
+            <a href="https://www.youtube.com/watch?v=HLmP76Bi9j4" target="_blank" style="text-decoration: none;">
+                <def id="def" onmouseover="def(1)" onmouseout="outdef()">princípio de Cavalieri</def>
+            </a> ou, de forma mais simplista, se considerarmos que um cone é como uma pirâmide cuja base possui infinitos lados, podemos determinar seu volume da seguinte forma:</p>
         <div class="destaque"><strong>Volume do cone</strong></br> $V=\frac{\pi r^2h}{3}$</div>
         <p>Agora é a sua vez! Voltando ao problema do filtro, a quantidade de água, em mililitros, que esse filtro suporta é, no máximo, aproximadamente <input type="text" name="ano" id="ano" value="???" onclick="this.value=''"><span style="display: none; color: rgb(2, 187, 2)">:</span>            ml. Use um número inteiro para dar a resposta.</p>
         <button onclick="verifica(this)" class="errou">Verificar</button>
@@ -286,8 +294,10 @@
         </div>
         <h3>Área superficial de uma esfera</h3>
         <p>Você já deve ter visto nas aulas de geografia as
-            <def>Projeções Cartográficas</def>. E sabe que não existe uma forma de planificar o planeta Terra sem que hajam distorções. A falta de solução para esse problema já foi provado por Gauss (1777-1855) e é estudada num ramo da Matemática chamado Geometria
-            Diferencial. No site a seguir você pode observar como a projeção cartográfica que usamos no google maps não nos permite comparar as áreas dos países.</p>
+            <a href="https://www.youtube.com/watch?v=qvAaulMCKDs" target="_blank">
+                <def>Projeções Cartográficas</def>
+            </a>. E sabe que não existe uma forma de planificar o planeta Terra sem que hajam distorções. A falta de solução para esse problema já foi provado por Gauss (1777-1855) e é estudada num ramo da Matemática chamado Geometria Diferencial. No site
+            a seguir você pode observar como a projeção cartográfica que usamos no google maps não nos permite comparar as áreas dos países.</p>
         <p>Observe o que acontece quando movemos um país para próximo da linha do equador ou em direção aos pólos.</p>
         <iframe scrolling="no" src="https://thetruesize.com/#?borders=1~!MTc0NjgxOTM.MjMzODMwMA*MjgyMzkxNzU(MjE1MzIzNw~!CONTIGUOUS_US*MTQyMjY4OTI.Mjk1ODE2OTE(MTc1)MA~!IN*NTI2NDA1MQ.Nzg2MzQyMQ)MQ~!CN*MTUwMzA3MDI.OTMyOTI0NQ(MjI1)Mg~!PY*MTc0MDQ1Nw.MjAzNTQ3NjI)Mw~!RU*ODE5MzI4.NjQ0Njk4OA)NA~!DE*MzYxNzM1Ng.MTYxODczODE)NQ"
             width="800px" height="400px"></iframe>
@@ -328,6 +338,7 @@
     <script type="module">
         import renderMathInElement from "https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.mjs"; renderMathInElement(document.body); renderMathInElement( document.body, { delimiters: [ {left: "$$", right: "$$", display: true}, {left: "\\[", right:
         "\\]", display: true}, {left: "$", right: "$", display: false}, {left: "\\(", right: "\\)", display: false} ] } ); document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body, { strict: false }); });
+
     </script>
 </body>
 
