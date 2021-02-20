@@ -32,7 +32,7 @@
 
 </head>
 
-<body>
+<body onload="continua()">
 
     <div id="resol" style="display: none;"></div>
 
@@ -55,7 +55,7 @@
 
 
 
-    <section class="incompleto">
+    <section id="s1">
         <div class='capa' style="background-image: url(img/pawel-czerwinski-bkGwwU_MNow-unsplash.jpg);"></div>
         <h2>Círculos</h2>
         <p>Na geometria plana, um círculo é o conjunto de pontos cuja distância a um determinado ponto <strong>C</strong>, chamado de centro, é <strong>menor ou igual</strong> a um valor <strong>r</strong>, chamado de raio. Podemos associar a um círculo
@@ -69,7 +69,12 @@
         </div>
 
     </section>
-    <section class="incompleto">
+
+
+
+
+
+    <section style="display: none" id="s2">
         <p>Observe que círculo não é sinônimo de circunferência. Num plano, uma circunferência é o
             <a href="https://www.youtube.com/watch?v=KCddkOfC8SU" target="_blank" style="text-decoration: none;">
                 <def id="def" onmouseover="def(0)" onmouseout="outdef()">lugar geométrico</def>
@@ -94,7 +99,7 @@
                         <div>A</div>$S_1=S_2$</div>
                     <div onclick='escolheu(this)'>
                         <div>B</div>$S_1=2.S_2$</div>
-                    <div onclick='escolheu(this)' class="ce">
+                    <div onclick='completo(2), escolheu(this)' class="ce">
                         <div>C</div>$S_1=3.S_2$</div>
                     <div onclick='escolheu(this)'>
                         <div>D</div>$S_1=\frac{3}{2}.S_2$</div>
@@ -107,7 +112,10 @@
 
         </table>
     </section>
-    <section class="incompleto">
+
+
+
+    <section style="display: none" id="s3">
         <p onclick="resol(1)" style="cursor:pointer">Muito bem! Gostaria de ver a resolução que preparamos?
             <def>Clique aqui</def>.</p>
         <p>A região em azul desse exercício é chamada <strong>Coroa Circular</strong>. Se <strong>R</strong> é seu raio externo e <strong>r</strong> é seu raio interno, então sua área é dada por:</p>
@@ -158,7 +166,7 @@
 
             <div onclick='escolheu(this)'>
                 <div>A</div>$\frac{R}{2}$</div>
-            <div onclick='escolheu(this), completo(), completo()' class="ce">
+            <div onclick='completo(3), completo(4), completo(5), escolheu(this)' class="ce">
                 <div>B</div>$2R$</div>
             <div onclick='escolheu(this)'>
                 <div>C</div>$4R$</div>
@@ -170,21 +178,29 @@
         </div>
 
     </section>
-    <section class="incompleto">
+
+
+    <section style="display: none" id="s4">
         <p onclick="resol(2)" style="cursor:pointer">Muito bem! Gostaria de ver a resolução que preparamos?
             <def>Clique aqui</def>.</p>
         <p>Você pode usar essa aplicação do geogebra para verificar o que acontece com o volume de um cilindro quando: </br>
             <i class="fas fa-caret-right"></i> reduzimos sua altura para $\frac{1}{4}$ de sua medida e duplicamos o seu raio; ou</br>
             <i class="fas fa-caret-right"></i> dobramos o raio e mantemos a altura. </p>
     </section>
-    <section class="incompleto" style="max-width: 1200px; padding: 0px max(calc(50% - 600px), 20px); height: 500px; background-image: url(img/backg.png); background-position: center; background-size: cover;">
+
+
+
+    <section style="display: none" id="s5" style="max-width: 1200px; padding: 0px max(calc(50% - 600px), 20px); height: 500px; background-image: url(img/backg.png); background-position: center; background-size: cover;">
 
         <iframe scrolling="no" title="Volume cilindro" src="https://www.geogebra.org/material/iframe/id/tjbdf63z/width/1200/border/FFFFFF/sfsb/false/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" width="100%"
             height="100%" style="border:0px; height: 500px; "> </iframe>
         <p style="text-align: right;">Autora: Júlia</p>
         <p style="text-align: center; font-size: 3em; margin:0px"><i class="fas fa-chevron-down"></i></p>
     </section>
-    <section class="incompleto">
+
+
+
+    <section style="display: none" id="s6">
 
         <div class='capa' style="background-image: url(img/capacone.jpg);"></div>
         <h2>Cone</h2>
@@ -242,13 +258,16 @@
                 <div>B</div>16</div>
             <div onclick='escolheu(this)'>
                 <div>C</div>17</div>
-            <div onclick='escolheu(this)' class="ce">
+            <div onclick='completo(6), escolheu(this)' class="ce">
                 <div>D</div>18</div>
             <div onclick='escolheu(this)'>
                 <div>E</div>21</div>
         </div>
     </section>
-    <section class="incompleto">
+
+
+
+    <section style="display: none" id="s7">
         <p onclick="resol(3)" style="cursor:pointer">Muito bem! Gostaria de ver a resolução que preparamos?
             <def>Clique aqui</def>.</p>
         <h3>Tronco de Cone</h3>
@@ -268,7 +287,7 @@
                 <div>B</div>um cone e um cilindro.</div>
             <div onclick='escolheu(this)'>
                 <div>C</div>um tronco de pirâmide e um cilindro.</div>
-            <div onclick='escolheu(this)' class="ce">
+            <div onclick='completo(7), escolheu(this)' class="ce">
                 <div>D</div>
                 dois troncos de cone.</div>
             <div onclick='escolheu(this)'>
@@ -276,7 +295,10 @@
 
         </div>
     </section>
-    <section class="incompleto">
+
+
+
+    <section style="display: none" id="s8">
         <p>As formas de bolo têm esse formato para diminuir o tempo de cozimento, para que no final o bolo tenha uma maior altura e para que seja mais fácil o desenformar.</p>
         <div class='capa' style="background-image: url(img/capaesfera.jpg);"></div>
         <h2>Esfera</h2>
@@ -335,7 +357,10 @@
         <h3>Conclusão</h3>
         <p>Agora que vimos os principais corpos redondos, suas partes, volume e área superficial, chegamos ao fim dessa atividade. Espero que tenha sido um tempo de muita aprendizagem. Caso tenha alguma dúvida, mande uma mensagem!</p>
     </section>
-    <section class="incompleto">
+
+
+
+    <section style="display: none" id="s9">
     </section>
 
 

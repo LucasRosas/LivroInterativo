@@ -24,24 +24,56 @@ function libera(x, y, z) {
         errados = document.getElementsByClassName('errado').length
         if (certos == y && errados == z) {
             x.parentElement.classList.add('done')
-            completo()
+            completo(1)
         }
     }
 }
 
-function completo() {
-    x = document.getElementsByClassName('incompleto')[0]
-    x.classList.remove('incompleto')
-    x.classList.add('completo')
-    x.classList.remove('atual')
-    x = document.getElementsByClassName('incompleto')[0]
-    x.style.display = 'block'
-    x.classList.add('atual')
-        // window.scrollTo(0, x.offsetTop - 400)
+function completo(n) {
+    n = parseInt(n) + 1
+    localStorage.setItem('etapa', n)
+    document.getElementById('s' + n).style.display = "block"
+
+    // x = document.getElementsByClassName('incompleto')[0]
+    // x.classList.remove('incompleto')
+    // x.classList.add('completo')
+    // x.classList.remove('atual')
+    // x = document.getElementsByClassName('incompleto')[0]
+    // x.style.display = 'block'
+    // x.classList.add('atual')
+    // window.scrollTo(0, x.offsetTop - 400)
     npis = document.getElementsByClassName('mord').length
     for (i = 0; i < npis; i++) {
         pis = document.getElementsByClassName('mord')[i]
         pis.innerHTML = pis.innerHTML.replace('π', '<text style="font-family: Symbol;">&#x3C0</text>');
+    }
+}
+
+function continua() {
+    a = parseInt(localStorage.getItem('etapa'))
+    if (1 < a) {
+        completo(1)
+    }
+    if (2 < a) {
+        completo(2)
+    }
+    if (3 < a) {
+        completo(3)
+    }
+    if (4 < a) {
+        completo(4)
+    }
+    if (5 < a) {
+        completo(5)
+    }
+    if (6 < a) {
+        completo(6)
+    }
+    if (7 < a) {
+        completo(7)
+    }
+    if (8 < a) {
+        completo(7)
     }
 }
 
@@ -61,7 +93,8 @@ function escolheu(x) {
                 x.innerHTML = x.innerHTML + '<i class="fas fa-check"></i>'
                 x.classList.remove('ce')
                 x.parentElement.classList.add('certo')
-                completo(x)
+                n = parseInt(localStorage.setItem('ponto', n)) + 1
+                completo(n)
 
             } else {
                 if (!x.classList.contains('me-errou')) {
