@@ -365,3 +365,20 @@ button:hover {
     border-radius: 10px;
     border: 2px solid green;
 }
+
+.final {
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    background-color: rgb(54, 54, 54);
+    font-size: 15px;
+    padding-bottom: 50px;
+}
+
+.final>a {
+    background-color: greenyellow;
+    padding: 4px;
+    cursor: pointer;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+}

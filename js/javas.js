@@ -71,9 +71,8 @@ function continua() {
     }
     if (7 < a) {
         completo(7)
-    }
-    if (8 < a) {
-        completo(7)
+        completo(8)
+        completo(9)
     }
 }
 
@@ -172,4 +171,10 @@ function outdef() {
         document.getElementsByClassName('boxdef')[i].style.display = 'none'
     }
 
+}
+
+
+function resetar() {
+    localStorage.setItem('etapa', 1)
+    document.location.reload(true);
 }
