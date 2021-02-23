@@ -178,3 +178,10 @@ function resetar() {
     localStorage.setItem('etapa', 1)
     document.location.reload(true);
 }
+
+function esc(x) {
+
+    completo(7)
+    completo(8)
+    escolheu(x)
+}
